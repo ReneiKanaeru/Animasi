@@ -1440,7 +1440,7 @@ local function LoadAndUpdateAnimations()
     
     local function fetchOnlineAnimations()
         local success, result = pcall(function()
-            return game:HttpGet("https://raw.githubusercontent.com/Gazer-Ha/Gaze-stuff/refs/heads/main/Gaze%20Anim%20Database")
+            return game:HttpGet("https://raw.githubusercontent.com/ReneiKanaeru/Animation/refs/heads/main/Animation")
         end)
         
         if success and result then
@@ -1538,5 +1538,6 @@ local lt = os.clock() - st
 Notify("loaded", string.format("in %.2f seconds.", lt), 5)
 Notify("Changelog", "added UI/selection/search behavior", 6)
 Notify("Another Another fix", "Ah yes. fixed Only Able To Add Idle", 6)
+
 
 end)
